@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <meta name="copyright" content="Copyright Edgar Flores.">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="imagenes/alura.svg">
+            <h1 class="title">ENCRIPTADOR</h1>
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="left" id="left">
+                <textarea class="inputtextarea" id="textoInput" placeholder="Ingrese el texto aquí" autofocus required></textarea>
+                <div class="content_botones">
+                    <span class="left__info">
+                        <img src="/imagenes/!.svg" alt="advertencia">
+                        <span>
+                            Ingresar números podría generar errores al desencriptar
+                        </span>
+                    </span>
+                    <div class="botones">
+                        <button id="buttonEncriptarS" class="button__encriptar">
+                            <ion-icon name="eye-off-sharp"></ion-icon>
+                            Encriptar</button>
+                        <button id="buttonDesencriptarS" class="button__desencriptar">
+                            <ion-icon name="eye-sharp"></ion-icon>
+                            Desencriptar</button>
+                    </div>
+                    <details class="botonesSS">
+                        <summary class="subtitle">Modo Seguro</summary>
+                        <div class="botones">
+                            <button id="buttonEncriptarSS" class="button__encriptar"> <ion-icon name="lock-closed-sharp"></ion-icon>
+                                Encoded</button>
+                            <button id="buttonDesencriptarSS" class="button__desencriptar">
+                                <ion-icon name="key-sharp"></ion-icon>
+                                SuperKey</button>
+                        </div>
+                    </details>
+                </div>
+            </section>
+            <section class="right" id="rigth">
+                <img id="rightImagen" class="right__imagen" src="/imagenes/chillhop-lofi (1).gif" alt="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar.">
+                <textarea id="textoFinal" class="textoFinal" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="textoInfo" class="rigth__info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="button__copiar bn_ocultar" id="buttonCopiar">Copiar</button>
+            </section>
+        </article>
+    </main>
+    <footer class="footer ">
+        <p class="creador">
+            <a>
+              Edgar Flores
+            </a>
+        </p>
+        <div>
+            <a href="https://github.com/EdgarFloresz" target="_blank">
+                <img class="links" src="/imagenes/github.png" />
+            </a>
+
+            <a href="https://www.linkedin.com/in/edgar-de-jesus-flores-mart%C3%ADnez-299846271/" target="_blank">
+                <img class="links" src="/imagenes/linkedIn.png" />
+            </a>
+            <a href="https://app.netlify.com/teams/eddifloresz/" target="_blank">
+                <img class="links" src="/imagenes/netlify-logo-BD8F8A77E2-seeklogo.com.png"/>
+            </a>
+        </div>
+        <p class="creditos">
+            <a href="https://diegollanosr.github.io/" target="_blank" class="usuario">
+                &copy; Codigo basado by @diegollanosr</a>
+    </footer>
+    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
